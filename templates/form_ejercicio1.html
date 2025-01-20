@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/estilos.css">
+    <title>Ejercicio 1: Promedio de Notas</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Promedio de Notas</h1>
+        <form action="/ejercicio1" method="POST">
+            <label for="nota1">Nota 1:</label>
+            <input type="number" name="nota1" id="nota1" min="10" max="70" required>
+
+            <label for="nota2">Nota 2:</label>
+            <input type="number" name="nota2" id="nota2" min="10" max="70" required>
+
+            <label for="nota3">Nota 3:</label>
+            <input type="number" name="nota3" id="nota3" min="10" max="70" required>
+
+            <label for="asistencia">Asistencia (%):</label>
+            <input type="number" name="asistencia" id="asistencia" min="0" max="100" required>
+
+            <input type="submit" value="Calcular">
+        </form>
+
+        <!-- Mostrar resultados debajo del formulario -->
+        {% if resultado %}
+        <div class="resultado">
+            <p><strong>Promedio:</strong> {{ resultado.promedio }}</p>
+            <p><strong>Asistencia:</strong> {{ resultado.asistencia }}%</p>
+            <p><strong>Estado:</strong> {{ resultado.estado }}</p>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>

@@ -1,0 +1,110 @@
+
+
+/* Importar la fuente Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+/* General */
+body {
+    font-family: 'Roboto', sans-serif; /* Fuente Roboto */
+    background: linear-gradient(135deg, #2c2c2c, #4a4a4a); /* Fondo degradado */
+    color: #000000; /* Texto blanco */
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenedor principal */
+.container {
+    background-color: rgba(255, 255, 255, 1); /* Fondo translúcido */
+    padding: 30px;
+    border-radius: 20px; /* Bordes circulares */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra */
+    text-align: center;
+    width: 400px;
+}
+
+/* Título */
+h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #00bcd4; /* Color cian */
+}
+
+/* Botones del menú */
+button {
+    background-color: #00bcd4; /* Cian */
+    color: #ffffff;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 25px; /* Bordes redondeados */
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #008c9e; /* Cian oscuro al pasar el mouse */
+}
+
+/* Formularios */
+form {
+    margin-top: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #000000;
+    text-align: left;
+}
+
+form input[type="text"], form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #cccccc; /* Borde claro */
+    border-radius: 20px; /* Bordes redondeados */
+    background-color: #ffffff; /* Fondo blanco */
+    color: #000000; /* Texto negro */
+    font-size: 14px;
+}
+
+form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #00bcd4; /* Cian */
+    color: #000000;
+    border: none;
+    border-radius: 25px; /* Bordes redondeados */
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #008c9e; /* Cian oscuro */
+}
+
+/* Resultados */
+.resultado {
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo translúcido */
+    padding: 15px;
+    border-radius: 20px; /* Bordes redondeados */
+    color: #000000;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra */
+}
+
+/* Mejoras generales */
+a {
+    color: #00bcd4;
+    text-decoration: none;
+}

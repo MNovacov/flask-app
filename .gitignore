@@ -1,0 +1,11 @@
+# Entornos virtuales
+.venv/
+venv/
+
+# Archivos de PyCharm
+.idea/
+
+# Archivos de caché
+__pycache__/
+*.pyc
+*.pyo

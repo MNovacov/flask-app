@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/estilos.css">
+    <title>Resultado</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Resultado</h1>
+        {% if resultado.promedio %}
+            <p>Promedio: {{ resultado.promedio }}</p>
+            <p>Asistencia: {{ resultado.asistencia }}%</p>
+            <p>Estado: {{ resultado.estado }}</p>
+        {% elif resultado.nombre %}
+            <p>Nombre más largo: {{ resultado.nombre }}</p>
+            <p>Caracteres: {{ resultado.caracteres }}</p>
+        {% endif %}
+        <button onclick="window.location.href='/'">Volver al Menú</button>
+    </div>
+</body>
+</html>
