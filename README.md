@@ -27,3 +27,41 @@ Este proyecto es una aplicación web desarrollada con **Flask**, diseñada para 
    - Permite ingresar tres nombres.
    - Determina cuál es el nombre más largo y cuántos caracteres tiene.
 
+---
+
+## **Capturas de pantalla**
+
+### Menú principal:
+![Menú Principal](https://github.com/MNovacov/flask-app/blob/main/menu%20principal.png)
+
+### Formulario de Promedio de Notas:
+![Promedio de Notas](https://github.com/MNovacov/flask-app/blob/main/promedio%20de%20notas.png)
+
+### Formulario de Comparación de Nombres:
+![Comparación de Nombres](https://github.com/MNovacov/flask-app/blob/main/comparar%20nombres.png)
+
+
+## **Cómo usar el proyecto**
+
+```bash
+# Clonar el repositorio
+git clone https://github.com/MNovacov/flask-app.git
+cd flask-app
+
+# Crear un entorno virtual
+python -m venv .venv
+
+# Activar el entorno virtual
+# En Windows:
+.venv\Scripts\activate
+# En Mac/Linux:
+source .venv/bin/activate
+
+# Instalar dependencias
+pip install flask
+
+# Ejecutar la aplicación
+python main.py
+
+# Acceder a la aplicación en el navegador
+http://127.0.0.1:5000
